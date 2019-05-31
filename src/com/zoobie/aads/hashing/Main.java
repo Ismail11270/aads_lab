@@ -14,14 +14,16 @@ public class Main {
 //        linearProbing.printTable();
 
         int x = 21391434;
-        LinearProbing.SearchResult a = linearProbing.search(x);
+//        LinearProbing.SearchResult a = linearProbing.search(x);
+//
+//        System.out.println(x);
+//
+//        if (a.hit) {
+//            System.out.println("Search hit after " + a.iterations + " iterations");
+//        } else System.out.println("Search miss after " + a.iterations + " iterations");
 
-        System.out.println(x);
-
-        if (a.hit) {
-            System.out.println("Search hit after " + a.iterations + " iterations");
-        } else System.out.println("Search miss after " + a.iterations + " iterations");
-
+        linearProbing.searchExecute();
+        linearProbing.getResults();
     }
 
     public static void fillIntsFile(){

@@ -1,6 +1,7 @@
 package com.zoobie.aads.compression;
 
 
+import javax.swing.*;
 import java.io.*;
 import java.util.*;
 
@@ -73,6 +74,47 @@ public class Controller {
         return results;
     }
 
+    public List<Output> readBinaryResultsFromFile(){
+        String flag;
+        String offset;
+        String size;
+        String character;
+        int output;
+        List<Output> results = new ArrayList<>();
+        try{
+            fileScanner = new Scanner(inputFile);
+        }catch(FileNotFoundException e){
+            System.err.println("Input file not found, terminating the program!");
+            System.exit(-1);
+        }
+        while (fileScanner.hasNext()) {
+            if (fileScanner.hasNextInt()) {
+//                output = fileScanner.nextInt();
+//                String out = Integer.toString(output);
+                String out = fileScanner.next();
+//                System.out.println(out);
+                if (fileScanner.hasNext()) {
+                    fileScanner.skip(" ");
+                }
+                flag = out.substring(0,1);
+                if (flag.equals("0")) {
+//                    System.out.println("FLAG " + flag);
+                    offset = out.substring(1, 4);
+                    size = out.substring(4, 7);
+                    System.out.println(flag + " " + binaryStringToInt(offset) + " " + binaryStringToInt(size));
+                    results.add(new PositiveOutput(binaryStringToInt(offset), binaryStringToInt(size)));
+                } else if (flag.equals("1")) {
+//                    System.out.println("FLAG " + flag);
+                    character = out.substring(1);
+                    System.out.println(" \n" + (char) binaryStringToInt(character));
+                    String characterAsString = "" + (char) binaryStringToInt(character);
+                    characterAsString.toLowerCase();
+                    results.add(new NegativeOutput(characterAsString.charAt(0)));
+                }
+            }
+        }
+        return results;
+    }
     public Controller(String inputFile, String outputFile) {
         this.inputFile = new File(inputFile);
         this.outputFile = new File(outputFile);
@@ -101,7 +143,7 @@ public class Controller {
         compressor.compress();
         try {
             writeStandardOutputToFile(compressor.getResult());
-           // writeStringToFile(compressor.getBinaryOutput());
+            // writeStringToFile(compressor.getBinaryOutput());
         } catch (IOException e) {
             System.out.println(e);
         }
@@ -111,7 +153,8 @@ public class Controller {
 
     public void runDecompressor() {
         List<Output> compressedInput = new ArrayList<>();
-        compressedInput = readStandardResultsFromFile();
+//        compressedInput = readStandardResultsFromFile();
+        compressedInput = readBinaryResultsFromFile();
         System.out.print("Enter the dictionary letter: ");
         scanner = new Scanner(System.in);
         char a = scanner.nextLine().charAt(0);
@@ -124,5 +167,14 @@ public class Controller {
         }finally {
             System.out.println(result);
         }
+    }
+
+    private int binaryStringToInt(String binary){
+        char[] bin = binary.toCharArray();
+        int result = 0;
+        for(int i = 0; i < bin.length; i++){
+            if(bin[i] == '1') result+=Math.pow(2,bin.length - i - 1);
+        }
+        return result;
     }
 }

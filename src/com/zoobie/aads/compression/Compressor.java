@@ -13,12 +13,14 @@ public class Compressor {
     private Vector<Character> inputVec;
     private Vector<Character> dictAndBuff;
     private String dictionary;
+    private final int minEncodedLength = 3;
 
     public Compressor(String inputString) {
         this.decompressedString = inputString;
         inputVec = new Vector<>();
         dictAndBuff = new Vector<>();
     }
+
 
     /**
      * Constructor for decompressor
@@ -32,6 +34,7 @@ public class Compressor {
             this.dictionary += dictionary;
         }
         this.decompressedString = "";
+
     }
 
     private List<Output> result = new ArrayList<>();
@@ -90,6 +93,7 @@ public class Compressor {
         System.out.println(decompressedString);
         return decompressedString;
     }
+
     private Output contains(Vector<Character> dictAndBuff) {
         String dict = "";
         String buff = "";
@@ -106,7 +110,7 @@ public class Compressor {
         }
 //        System.out.println("dict " + dict);
 //        System.out.println("buffer " + buff);
-        for (int i = 0; i < buff.length(); i++) {
+        for (int i = 0; i < buff.length() - minEncodedLength + 1; i++) {
             StringBuffer subString = new StringBuffer(buff.substring(0, buff.length() - i));
             subString.reverse();
             String reSubString = subString.toString();
