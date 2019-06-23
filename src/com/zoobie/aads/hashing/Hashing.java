@@ -3,11 +3,10 @@ package com.zoobie.aads.hashing;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
-public class LinearProbing {
+public class Hashing {
 
     File file = new File("millionints.txt");
     Scanner fileScanner;
@@ -18,8 +17,10 @@ public class LinearProbing {
     private Random rand;
     private final int size;
     private float percent = 1;
-    public LinearProbing(int size) {
+    private boolean doubleHashing;
+    public Hashing(int size, boolean doubleHashing) {
         table = new int[size];
+        this.doubleHashing = doubleHashing;
         this.size = size;
         rand = new Random();
         this.hits = new ArrayList<>();
@@ -39,6 +40,12 @@ public class LinearProbing {
 
     private int hashingFunction(int a) {
         return a % this.size;
+    }
+    private int doubleHashingFunction(int a, int i){
+        int hash1 = a % size;
+        int hash2 = size - a % size;
+        return (hash1 + i*hash2) % size;
+
     }
     public void printTable(){
         for(int i : table){
@@ -62,8 +69,12 @@ public class LinearProbing {
         this.percent = percent;
        // int[] arrayFromFile = getRandomArray((int) (this.size * percent));
         int[] arrayFromFile = readIntsFromArray((int) (this.size * percent));
+        int j;
         for (int i : arrayFromFile) {
-            int k = hashingFunction(i);
+            j = 1;
+            int k;
+            if(doubleHashing) k = doubleHashingFunction(i,j);
+            else k = hashingFunction(i);
             boolean done = false;
              while (!done) {
                 if (table[k] == 0
@@ -71,7 +82,9 @@ public class LinearProbing {
                     table[k] = i;
                     done = true;
                 } else {
-                    k = hashingFunction(k + 1);
+                    j++;
+                    if(doubleHashing) k = doubleHashingFunction(i,j);
+                    else k = hashingFunction(k + 1);
                 }
             }
 
@@ -98,24 +111,30 @@ public class LinearProbing {
         }
         SearchResult result;
         for(int i : searchArray){
-            result = search(i);
+            result = linearProbingSearch(i);
             if(result.hit) hits.add(result.iterations);
             else misses.add(result.iterations);
         }
     }
-    public SearchResult search(int n){
-        int k = hashingFunction(n);
+    public SearchResult linearProbingSearch(int n){
+        int k;
+        int j = 1;
+        if(doubleHashing) k = doubleHashingFunction(n,j);
+        else k = hashingFunction(n);
         int i = 1;
         while(table[k]!=0) {
             if (table[k] == n) {
                 return new SearchResult(true,i);
             }else{
-                k = hashingFunction(k+1);
+                j++;
+                if(doubleHashing) k = doubleHashingFunction(n,j);
+                else k = hashingFunction(k+1);
                 i++;
             }
         }
         return new SearchResult(false,i);
     }
+
     public void getResults(){
         int sum = 0;
         for(int i : hits){

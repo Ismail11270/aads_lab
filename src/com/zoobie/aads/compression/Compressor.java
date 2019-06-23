@@ -135,7 +135,6 @@ public class Compressor {
             }
         }
     }
-
     public void printResults(){
         for(Output i : result){
             System.out.println(i);

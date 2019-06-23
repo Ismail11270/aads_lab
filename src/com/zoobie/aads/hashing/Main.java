@@ -9,12 +9,13 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        LinearProbing linearProbing = new LinearProbing(1000000);
+        Hashing linearProbing = new Hashing(1000003,false);
         linearProbing.fillTable(0.9f);
+        System.out.println("table filled");
 //        linearProbing.printTable();
 
-        int x = 21391434;
-//        LinearProbing.SearchResult a = linearProbing.search(x);
+//        int x = 21391434;
+//        Hashing.SearchResult a = linearProbing.linearProbingSearch(x);
 //
 //        System.out.println(x);
 //
