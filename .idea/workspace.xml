@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5be4e4b3-ca84-4816-ad4e-604c7e0ffc0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="43f4fad0-d0cd-4c48-9010-a9fd4f4c500c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/aadsLab/com/zoobie/aads/hashing/LinearProbing$SearchResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/aadsLab/com/zoobie/aads/hashing/LinearProbing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/aadsLab/com/zoobie/aads/hashing/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/aads_labs/com/zoobie/aads/compression/Compressor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aads_labs/com/zoobie/aads/compression/Compressor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aads_labs/com/zoobie/aads/compression/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aads_labs/com/zoobie/aads/compression/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aads_labs/com/zoobie/aads/hashing/LinearProbing$SearchResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aads_labs/com/zoobie/aads/hashing/LinearProbing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aads_labs/com/zoobie/aads/hashing/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aads_labs/com/zoobie/aads/hashing/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zoobie/aads/compression/Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zoobie/aads/compression/Compressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zoobie/aads/compression/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zoobie/aads/compression/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zoobie/aads/hashing/LinearProbing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,20 +20,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/dynamic/Main.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            <state relative-caret-position="-1848">
+              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+              <folding>
+                <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
+        <entry file="file://$PROJECT_DIR$/randomnumbers.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="691" selection-start-line="691" selection-end-line="691" />
+            <state relative-caret-position="315">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/hashing/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hashingdata.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -49,6 +76,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>txt</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,9 +95,9 @@
         <option value="$PROJECT_DIR$/src/com/zoobie/aads/compression/Main.java" />
         <option value="$PROJECT_DIR$/src/com/zoobie/aads/compression/Compressor.java" />
         <option value="$PROJECT_DIR$/src/com/zoobie/aads/hashing/LinearProbing.java" />
-        <option value="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java" />
-        <option value="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Main.java" />
         <option value="$PROJECT_DIR$/src/com/zoobie/aads/dynamic/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java" />
       </list>
     </option>
   </component>
@@ -79,42 +111,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="aads_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aads_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="aadsLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aadsLab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="aads_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aads_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="aadsLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aadsLab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="aads_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aads_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="aadsLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aadsLab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aads" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="aads_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aads_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="aadsLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aadsLab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aads" type="462c0819:PsiDirectoryNode" />
               <item name="compression" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="aads_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aads_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="aads" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aads_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aads_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="aadsLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aadsLab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aads" type="462c0819:PsiDirectoryNode" />
               <item name="hashing" type="462c0819:PsiDirectoryNode" />
@@ -124,12 +148,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560512346923" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561360689814" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -149,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DynamicProgramming (1)">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="DynamicProgramming (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zoobie.aads.dynamic.DynamicProgramming" />
       <module name="aads_labs" />
@@ -222,12 +247,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="aads_labs" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="aads_labs" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.DynamicProgramming (1)" />
         <item itemvalue="Application.DynamicProgramming" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -248,12 +320,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19777000" />
+    <option name="totallyTimeSpent" value="21930000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.537065" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21801706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -262,9 +335,9 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1767594" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22860238" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23510292" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -288,26 +361,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java</url>
-          <line>85</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hashingdata.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/compressed_binary.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -345,45 +403,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/compression/Compressor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+        <state relative-caret-position="2163">
+          <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/searchdata.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/hashing/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="method#random#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/millionints.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="691" selection-start-line="691" selection-end-line="691" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/dynamic/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4074">
+          <caret line="218" selection-start-line="218" selection-end-line="218" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/millionints.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="999852" column="8" lean-forward="true" selection-start-line="999852" selection-start-column="8" selection-end-line="999852" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hashingdata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomnumbers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/hashing/Hashing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1848">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding>
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zoobie/aads/hashing/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -9,13 +9,13 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        Hashing linearProbing = new Hashing(1000003,false);
-        linearProbing.fillTable(0.9f);
+        Hashing hashing = new Hashing(1000003,false);
+        hashing.fillTable(0.5f);
         System.out.println("table filled");
-//        linearProbing.printTable();
+//        hashing.printTable();
 
 //        int x = 21391434;
-//        Hashing.SearchResult a = linearProbing.linearProbingSearch(x);
+//        Hashing.SearchResult a = hashing.linearProbingSearch(x);
 //
 //        System.out.println(x);
 //
@@ -23,8 +23,8 @@ public class Main {
 //            System.out.println("Search hit after " + a.iterations + " iterations");
 //        } else System.out.println("Search miss after " + a.iterations + " iterations");
 
-        linearProbing.searchExecute();
-        linearProbing.getResults();
+        hashing.searchExecute();
+        hashing.getResults();
     }
 
     public static void fillIntsFile(){

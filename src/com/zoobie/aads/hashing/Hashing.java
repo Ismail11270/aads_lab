@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 public class Hashing {
 
-    File file = new File("millionints.txt");
+    File file = new File("randomnumbers.txt");
     Scanner fileScanner;
 
-    private int[] table;
+    private long[] table;
     private ArrayList<Integer> hits;
     private ArrayList<Integer> misses;
     private Random rand;
@@ -19,7 +19,7 @@ public class Hashing {
     private float percent = 1;
     private boolean doubleHashing;
     public Hashing(int size, boolean doubleHashing) {
-        table = new int[size];
+        table = new long[size];
         this.doubleHashing = doubleHashing;
         this.size = size;
         rand = new Random();
@@ -30,30 +30,24 @@ public class Hashing {
     private int random() {
         return rand.nextInt(100000000);
     }
-    private int[] getRandomArray(int n) {
-        int data[] = new int[n];
-        for(int i = 0; i < n; i++){
-            data[i] = random();
-        }
-        return data;
+
+    private int hashingFunction(long a) {
+        return (int)(a % this.size);
     }
 
-    private int hashingFunction(int a) {
-        return a % this.size;
-    }
-    private int doubleHashingFunction(int a, int i){
-        int hash1 = a % size;
-        int hash2 = size - a % size;
-        return (hash1 + i*hash2) % size;
-
+    private int doubleHashingFunction(long a, int i){
+        long hash1 = a % size;
+        long hash2 = size - a % size;
+        return (int)((hash1 + i*hash2) % size);
     }
     public void printTable(){
-        for(int i : table){
+        for(long i : table){
             System.out.println(i);
         }
     }
-    private int[] readIntsFromArray(int n){
-        int[] data = new int[n];
+
+    private long[] readIntsFromArray(int n){
+        long[] data = new long[n];
         try {
             fileScanner = new Scanner(file);
         }catch(FileNotFoundException e){
@@ -61,16 +55,16 @@ public class Hashing {
             System.exit(-1);
         }
         for(int i = 0; i < n; i++){
-            data[i] = fileScanner.nextInt();
+            data[i] = fileScanner.nextLong();
         }
         return data;
     }
     public void fillTable(float percent) {
         this.percent = percent;
        // int[] arrayFromFile = getRandomArray((int) (this.size * percent));
-        int[] arrayFromFile = readIntsFromArray((int) (this.size * percent));
+        long[] arrayFromFile = readIntsFromArray((int) (this.size * percent));
         int j;
-        for (int i : arrayFromFile) {
+        for (long i : arrayFromFile) {
             j = 1;
             int k;
             if(doubleHashing) k = doubleHashingFunction(i,j);
@@ -92,31 +86,37 @@ public class Hashing {
     }
     public void searchExecute(){
         int n = (int)(size * percent * 0.1);
-        int[] searchArray = new int[n];
+        long[] searchArray = new long[n];
         try {
-            fileScanner = new Scanner(new File("millionints.txt"));
+            fileScanner = new Scanner(file);
         }catch(FileNotFoundException e){
             System.err.println(e.getMessage());
             return;
         }
         for(int i = 0; i < size * percent / 2; i++){
-            fileScanner.nextInt();
+            fileScanner.nextLong();
         }
         for(int i = 0; i < n/2; i++){
-            searchArray[i] = fileScanner.nextInt();
+            searchArray[i] = fileScanner.nextLong();
             System.out.println(searchArray[i]);
         }
+        try {
+            fileScanner = new Scanner(new File("searchmiss.txt"));
+        }catch(FileNotFoundException e){
+            System.err.println(e.getMessage());
+            return;
+        }
         for(int i = n / 2; i < n; i++){
-            searchArray[i] = random();
+            searchArray[i] = fileScanner.nextLong();
         }
         SearchResult result;
-        for(int i : searchArray){
+        for(long i : searchArray){
             result = linearProbingSearch(i);
             if(result.hit) hits.add(result.iterations);
             else misses.add(result.iterations);
         }
     }
-    public SearchResult linearProbingSearch(int n){
+    public SearchResult linearProbingSearch(long n){
         int k;
         int j = 1;
         if(doubleHashing) k = doubleHashingFunction(n,j);
